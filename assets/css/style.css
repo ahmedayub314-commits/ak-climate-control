@@ -304,6 +304,16 @@ a.card:hover .more svg { transform: translateX(4px); }
 .card ul.mini li { padding-left: 18px; position: relative; margin-bottom: 4px; }
 .card ul.mini li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 2px; background: var(--ember-500); }
 
+/* ---------- Work gallery ---------- */
+.work { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 900px) { .work { grid-template-columns: 1fr 1fr; gap: 14px; } }
+@media (max-width: 480px) { .work { grid-template-columns: 1fr; } }
+.work figure { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; display: flex; flex-direction: column; }
+.work img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.work figcaption { padding: 16px 18px 18px; }
+.work figcaption b { display: block; font: 800 1.25rem/1.1 var(--font-head); letter-spacing: .02em; text-transform: uppercase; margin-bottom: 4px; }
+.work figcaption span { font-size: .92rem; color: var(--ink-soft); line-height: 1.45; display: block; }
+
 /* ---------- Coupons ---------- */
 .coupons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 @media (max-width: 960px) { .coupons { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; } }
