@@ -14,7 +14,7 @@ const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
 const GOOGLE_ADS_ID = '';              // e.g. 'AW-1234567890'
 const ADS_CONVERSIONS = { request: '', phone: '' };   // 'AW-.../label'
 const ADS_VALUES = { request: 150, phone: 150 };
-const META_PIXEL_ID = '';
+const META_PIXEL_ID = '1820622422583487';   // Events Manager dataset "AK Climate Control Website", created 2026-09-24
 
 const PHONE = document.body.dataset.phone || '';
 const BUSINESS_EMAIL = document.body.dataset.email || '';
